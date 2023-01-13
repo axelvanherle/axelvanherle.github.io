@@ -1,3 +1,5 @@
 # axelvanherle.github.io
 
-Hello there! I'm too lazy to host my own server, so github pages it is!
+Hello there!
+
+For now this is where my personal website will be hosted. I don't know enough about webdev to care about the lacking features, it's good enough for me.
