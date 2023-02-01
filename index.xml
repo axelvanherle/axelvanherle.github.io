@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Axel Vanherle</title>
     <link>//axelvanherle.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Axel Vanherle</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Feb 2023 14:47:14 +0100</lastBuildDate><atom:link href="//axelvanherle.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Aug 2022 21:30:04 +0800</lastBuildDate><atom:link href="//axelvanherle.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Myfirstpost</title>
+      <title>How i got this site up and running.</title>
+      <link>//axelvanherle.github.io/posts/exphugo/</link>
+      <pubDate>Wed, 01 Feb 2023 15:57:52 +0100</pubDate>
+      
+      <guid>//axelvanherle.github.io/posts/exphugo/</guid>
+      <description>Hello, so this post is just a quick explanation of how I got this website up and running.
+First of all, it&amp;rsquo;s hosted via GitHub pages. This makes it so I don&amp;rsquo;t have to go through any effort of setting this up myself, and it&amp;rsquo;s nice practice in case I need to use it some other time. Although an argument could be made that hosting my own site would have been better practice.</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
       <link>//axelvanherle.github.io/posts/myfirstpost/</link>
-      <pubDate>Wed, 01 Feb 2023 14:47:14 +0100</pubDate>
+      <pubDate>Wed, 01 Feb 2023 15:51:43 +0100</pubDate>
       
       <guid>//axelvanherle.github.io/posts/myfirstpost/</guid>
-      <description>Hello there! This is my first hugo post. </description>
+      <description>Hello world! This is just me playing around with HUGO, trying to figure things out.</description>
     </item>
     
   </channel>

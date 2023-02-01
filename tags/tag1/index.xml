@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag1 on Axel Vanherle</title>
+    <link>//axelvanherle.github.io/tags/tag1/</link>
+    <description>Recent content in tag1 on Axel Vanherle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Feb 2023 15:51:43 +0100</lastBuildDate><atom:link href="//axelvanherle.github.io/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>//axelvanherle.github.io/posts/myfirstpost/</link>
+      <pubDate>Wed, 01 Feb 2023 15:51:43 +0100</pubDate>
+      
+      <guid>//axelvanherle.github.io/posts/myfirstpost/</guid>
+      <description>Hello world! This is just me playing around with HUGO, trying to figure things out.</description>
+    </item>
+    
+  </channel>
+</rss>
