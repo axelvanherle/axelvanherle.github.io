@@ -1,5 +1,5 @@
 ---
-title: How i got this website up and running.
+title: My first post!
 tags: ['hugo', 'school', 'webdev', 'devops']
 date: 2023-02-20
 author: "Axel Vanherle"
