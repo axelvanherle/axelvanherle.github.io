@@ -1,16 +1,11 @@
 ---
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: A quick intro to Axel.
 comments: false
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Welcome to my blog!
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+As a student of electronics ICT, I am constantly exploring the latest developments in technology and how they can be applied to real-world problems. Along the way, I have developed a keen interest in Linux, automation, DevOps, and web design, and I am excited to share my knowledge and experiences with you through this platform. Whether you are a fellow student, a tech enthusiast, or simply curious about these topics, I invite you to join me on this journey of discovery and learning.
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Got something you want to ask? You can contact me on any platform you find below.
