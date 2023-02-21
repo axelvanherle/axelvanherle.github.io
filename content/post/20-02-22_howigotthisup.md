@@ -17,7 +17,7 @@ It wasn't difficult to set this up once I got the hang of Hugo. I spent some tim
 
 ### How
 
-I started with a simple GitHub repository, to which I added a Hugo site. After i had a site, i needed a time. I had starred a bunch of themes, but this one stood out to me, it's simple, but clean. Then i added a github actions to automate the building part for me.
+I started with a simple GitHub repository, to which I added a Hugo site. After i had a site, i needed a theme. I had starred a bunch of themes, but this one stood out to me, it's simple, but clean. Then i added a github actions to automate the building part for me.
 
 Basically, once you add a post, the hugo workflow gets triggered that builds the website using the configuration, theme, etc. that I set up. This workflow publishes the built website to the gh-pages branch. Once that is pushed, another workflow gets triggered that renews the GitHub Page. All of this happens in under a minute, so it's all pretty real-time.
 
