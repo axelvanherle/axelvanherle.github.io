@@ -31,6 +31,12 @@ It starts with the includes. These are needed for the various functions i use la
 - `<QInputDialog>`: This header provides a class for creating dialog boxes that prompt the user for input.
 - `<QApplication>` and `<QtWidgets>`: These headers are used for creating GUI applications with Qt, including widgets and other graphical elements.
 
+For some reference, I will be explaining my code in this format;
+```
+code here
+```
+Explanation here.
+
 ```cpp
 QApplication a(argc, argv);
 
@@ -127,7 +133,7 @@ return a.exec();
 ```
 And here we are, at the end of the main with the last two lines, but fear not; there is more. `window.show()` makes the window visible to the user. The second line `return a.exec()` starts the event loop of the Qt application, which waits for and processes events.
 
-Now we move on to the `TcpClient` class. I will not be explaining the header file at all, since this is just the declaration of the functions, slots, etc. The header file can be found [here](https://github.com/axelvanherle/P2P-TCP-chatclient-NP/blob/main/p2pchatclient/tcpclient.h) and the CPP file can be found [here](https://github.com/axelvanherle/P2P-TCP-chatclient-NP/blob/main/p2pchatclient/tcpclient.cpp).
+Now we move on to the `TcpClient` class. I will not be explaining the header file at all, since this is just the declaration of the functions, slots, etc. The header file can be found [here](https://github.com/axelvanherle/P2P-TCP-chatclient-NP/blob/main/p2pchatclient/tcpclient.h) and the C++ file can be found [here](https://github.com/axelvanherle/P2P-TCP-chatclient-NP/blob/main/p2pchatclient/tcpclient.cpp).
 
 ```cpp
 TcpClient::TcpClient(QObject *parent)
@@ -264,8 +270,8 @@ std::string TcpClient::getPeers(void)
 ```
 This function returns a list of peers connected to the `TcpClient` object as a string. The function first initializes the `peerList` variable with the string `"NEWCON"` followed by a newline character. Then, it loops through each socket in the `m_sockets` list and checks if it is in a connected state using the `QTcpSocket::state()` function. If the socket is connected, it retrieves the IP address of the peer using `socket->peerAddress().toIPv4Address()` and converts it to a `QString`. It then appends the IP address, followed by the string `":24042"` and a newline character, to the `peerList` variable. Finally, the function converts the variable to a `std::string` and returns it, for other functions to call and use.
 
-In conclusion, I found this project to be very enjoyable and challenging. I had never worked with QT or CPP in this way before, so it's safe to say that it has leveled up my skills. This was similar to what happened last year in the networking course when I worked with C, which gave me a better understanding of C itself. It turns out that OOP is not such a bad thing after all, who would've though? This project also gave me a better appreciation for QT. At the beginning of the project, I wanted to switch to Berkeley sockets like I was used to in C, but I ended up persevering and it was worth it. Not only am I now better at CPP, but this is also my first GUI-based application! Hooray! I went beyond what I was supposed to do, and I have to say that I'm pretty proud of it.
+In conclusion, I found this project to be very enjoyable and challenging. I had never worked with QT or C++ in this way before, so it's safe to say that it has leveled up my skills. This was similar to what happened last year in the networking course when I worked with C, which gave me a better understanding of C itself. It turns out that OOP is not such a bad thing after all, who would've though? This project also gave me a better appreciation for QT. At the beginning of the project, I wanted to switch to Berkeley sockets like I was used to in C, but I ended up persevering and it was worth it. Not only am I now better at C++, but this is also my first GUI-based application! Hooray! I went beyond what I was supposed to do, and I have to say that I'm pretty proud of it.
 
-I do wonder how the rest of the class did on the project. I only got to see their work when I asked them in class, and it's a bit disappointing that no one else created a public repository like mine. I really enjoy reading through them. However, I don't think many people attempted the project, which doesn't bother me too much since creating it wasn't a requirement. All, other students were free to use it. Additionally, the next assignment is an individual project worth more, so this project was just an introduction to the next one for me.
+I do wonder how the rest of the class did on the project. I only got to see their work when I asked them in class, and it's a bit disappointing that no one else created a public repository like mine. I really enjoy reading through them. However, I don't think many people attempted the project, which doesn't bother me too much since creating it wasn't a requirement to get your grades. All other students were free to use the code created by any other student, without losing any grades for it. Additionally, the next assignment is an individual project worth 4x more, so this project was just an introduction to the next one for me.
 
 I hope you enjoyed reading this post! If you have any questions or if there's something you don't understand, don't hesitate to ask.
