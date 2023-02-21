@@ -13,6 +13,8 @@ But what was the challenge? Before I explain my code, I'm going to talk about wh
 
 As part of their coursework, each student was required to create a TCP peer-to-peer chat client using C++ OOP style. This involved creating a chat client that could connect with one other peer, with the IP address provided as a command line argument. The first peer, however, did not require an argument. On first connect, the chat client needed to be able to receive a list of other peers from the first peer, and connect to these new peers. Finally, the chat client needed to be capable of sending and receiving messages to and from all other peers in the network. Overall, this project required students to demonstrate their understanding of fundamental concepts in network programming, as well as their ability to apply these concepts in a practical project.
 
+<img src="img/21-02-23_p2ptcpchatclient/P2P_network.svg" alt="p2pexample">
+
 Now that you know what it is about, I will explain my code and why I did certain things as best as I can. I will be using small code blocks, to explain my code in sections to make it easier to understand. Note that I am not writing this blog post to boast or even attempt to teach anyone anything. I simply enjoy writing and plan to maintain this blog, so I can look back on it. If someone picks something up or learns something new, even better. To get a bigger picture of the entire project, head to the GitHub found [here](https://github.com/axelvanherle/P2P-TCP-chatclient-NP).
 
 Let's start where the code starts, in the main. The entire `main.cpp` file can be found [here](https://github.com/axelvanherle/P2P-TCP-chatclient-NP/blob/main/p2pchatclient/main.cpp), I will be pulling code blocks from this and explaining it in more detail.
