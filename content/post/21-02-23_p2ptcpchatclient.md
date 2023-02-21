@@ -83,6 +83,12 @@ The widgets created are:
 
 The widgets are then added to a `QVBoxLayout`, which is a vertical layout manager that arranges the widgets vertically. Finally, the layout is set as the layout for the window widget.
 
+Here is how it looks;
+
+example 1             |  example 2
+:-------------------------:|:-------------------------:
+![p2pexample](/img/21-02-23_p2ptcpchatclient/ex1.png)  |  ![serverexample](/img/21-02-23_p2ptcpchatclient/ex2.png)
+
 ```cpp
 if (argc == 3)
     client.firstConnect(argv[1], atoi(argv[2]));
