@@ -19,7 +19,7 @@ peer-to-peer             |  server based
 :-------------------------:|:-------------------------:
 ![p2pexample](/img/21-02-23_p2ptcpchatclient/P2P_network.png)  |  ![serverexample](/img/21-02-23_p2ptcpchatclient/Server_network.png)
 
-Now that you know what it is about, I will explain my code and why I did certain things as best as I can. I will be using small code blocks, to explain my code in sections to make it easier to understand. Note that I am not writing this blog post to boast or even attempt to teach anyone anything. I simply enjoy writing and plan to maintain this blog, so I can look back on it. If someone picks something up or learns something new, even better. To get a bigger picture of the entire project, head to the GitHub found [here](https://github.com/axelvanherle/P2P-TCP-chatclient-NP).
+Now that you know what the project is about, I will explain my code and why I did certain things as best as I can. I will be using small code blocks, to explain my code in sections to make it easier to understand. Note that I am not writing this blog post to boast or even attempt to teach anyone anything. I simply enjoy writing and plan to maintain this blog, so I can look back on it in the future. If someone picks something up or learns something new, even better. To get a bigger picture of the entire project, head to the GitHub found [here](https://github.com/axelvanherle/P2P-TCP-chatclient-NP).
 
 Let's start where the code starts, in the main. The entire `main.cpp` file can be found [here](https://github.com/axelvanherle/P2P-TCP-chatclient-NP/blob/main/p2pchatclient/main.cpp), I will be pulling code blocks from this and explaining it in more detail.
 
@@ -31,26 +31,14 @@ It starts with the includes. These are needed for the various functions i use la
 - `<QInputDialog>`: This header provides a class for creating dialog boxes that prompt the user for input.
 - `<QApplication>` and `<QtWidgets>`: These headers are used for creating GUI applications with Qt, including widgets and other graphical elements.
 
-
-After the includes are done I initialize a Qt application using the QApplication class and creates an instance of it named `a`. The `TcpClient` object is then created using the default constructor.
 ```cpp
 QApplication a(argc, argv);
 
 TcpClient client;
 ```
+After the includes are done I initialize a Qt application using the `QApplication` class and creates an instance of it named `a`. The `TcpClient` object is then created using the default constructor.
 
-This code creates a graphical user interface (GUI) with several widgets using the Qt library.
 
-The widgets created are:
-- `outputLabel`: a `QLabel` widget with the text "Enter message:"
-- `inputLineEdit`: a` QLineEdit` widget for the user to enter text
-- `sendButton`: a `QPushButton` widget with the text "Send"
-- `inputLabel`: a `QLabel` widget with the text "Received messages:"
-- `receivedTextEdit`: a `QPlainTextEdit` widget for displaying received messages. It is set to read-only, has a maximum block count of 100, - and is able to display multiple lines of text.
-- `debugLabel`: a `QLabel` widget with the text "Debug messages:"
-- `debugTextEdit`: a `QPlainTextEdit` widget for displaying debug messages. It is set to read-only, has a maximum height of 110 pixels, has a maximum block count of 100, and is styled with red text.
-
-The widgets are then added to a `QVBoxLayout`, which is a vertical layout manager that arranges the widgets vertically. Finally, the layout is set as the layout for the window widget.
 ```cpp
 QLabel* outputLabel = new QLabel("Enter message:");
 QLineEdit* inputLineEdit = new QLineEdit();
@@ -76,14 +64,25 @@ layout->addWidget(debugLabel);
 layout->addWidget(debugTextEdit);
 window.setLayout(layout);
 ```
+This code block creates a GUI with several widgets using the Qt library.
 
-Then there's this part. It doesn't do much; it simply checks whether command line arguments have been passed. If they have, the `firstConnect` function is called.
+The widgets created are:
+- `outputLabel`: a `QLabel` widget with the text "Enter message:"
+- `inputLineEdit`: a` QLineEdit` widget for the user to enter text
+- `sendButton`: a `QPushButton` widget with the text "Send"
+- `inputLabel`: a `QLabel` widget with the text "Received messages:"
+- `receivedTextEdit`: a `QPlainTextEdit` widget for displaying received messages. It is set to read-only, has a maximum block count of 100, - and is able to display multiple lines of text.
+- `debugLabel`: a `QLabel` widget with the text "Debug messages:"
+- `debugTextEdit`: a `QPlainTextEdit` widget for displaying debug messages. It is set to read-only, has a maximum height of 110 pixels, has a maximum block count of 100, and is styled with red text.
+
+The widgets are then added to a `QVBoxLayout`, which is a vertical layout manager that arranges the widgets vertically. Finally, the layout is set as the layout for the window widget.
+
 ```cpp
 if (argc == 3)
     client.firstConnect(argv[1], atoi(argv[2]));
 ```
+Then there's this part. It doesn't do much; it simply checks whether command line arguments have been passed. If they have, the `firstConnect` function is called.
 
-This snippet creates a connection between a `QTcpSocket` and the `TcpClient` object. When a new connection is made, it prints the peer address and sets up a signal-slot connection to read incoming data from all connected sockets. The code is a lambda function that is executed when a new connection is made that takes a `QTcpSocket` pointer as its argument. This function first prints the peer address of the socket using `qDebug()`. It then appends the same information to the `debugTextEdit` using `appendPlainText()`. Finally, it sets up a signal-slot connection between the socket's `readyRead` signal and the `readFromAll` slot of the `TcpClient` object using the `QObject::connect()` function.
 ```cpp
 QObject::connect(&client, &TcpClient::newConnection, [&](QTcpSocket *socket)
 {
@@ -92,8 +91,8 @@ QObject::connect(&client, &TcpClient::newConnection, [&](QTcpSocket *socket)
     QObject::connect(socket, &QTcpSocket::readyRead, &client, &TcpClient::readFromAll);
 });
 ```
+This snippet creates a connection between a `QTcpSocket` and the `TcpClient` object. When a new connection is made, it prints the peer address and sets up a signal-slot connection to read incoming data from all connected sockets. The code is a lambda function that is executed when a new connection is made that takes a `QTcpSocket` pointer as its argument. This function first prints the peer address of the socket using `qDebug()`. It then appends the same information to the `debugTextEdit` using `appendPlainText()`. Finally, it sets up a signal-slot connection between the socket's `readyRead` signal and the `readFromAll` slot of the `TcpClient` object using the `QObject::connect()` function.
 
-This code uses a lambda function to connect the `newMessageReceived` signal of the `TcpClient` object to a slot. When a new message is received, the signal is emitted and the lambda function is called. The function then logs the received message using `qDebug` and appends it to the `receivedTextEdit` widget.
 ```cpp
 QObject::connect(&client, &TcpClient::newMessageReceived, [&](QString message)
 {
@@ -101,8 +100,9 @@ QObject::connect(&client, &TcpClient::newMessageReceived, [&](QString message)
     receivedTextEdit->appendPlainText(message);
 });
 ```
+This code uses a lambda function to connect the `newMessageReceived` signal of the `TcpClient` object to a slot. When a new message is received, the signal is emitted and the lambda function is called. The function then logs the received message using `qDebug` and appends it to the `receivedTextEdit` widget.
 
-This is a lambda function that is used to connect the click signal of the `sendButton` to a slot that sends a message to all peers. When the `sendButton` is clicked, the function gets executed. It first retrieves the message entered by the user from the `inputLineEdit`, and checks if it is empty. If it is, it displays an error message using a `QMessageBox`. Otherwise, it logs the message to the `debugTextEdit`, sends it to all connected peers using the `sendToAll` function of the `TcpClient` object, and clears the `inputLineEdit`.
+
 ```cpp
 QObject::connect(sendButton, &QPushButton::clicked, [&]()
 {
@@ -119,16 +119,16 @@ QObject::connect(sendButton, &QPushButton::clicked, [&]()
     inputLineEdit->clear();
 });
 ```
+This is a lambda function that is used to connect the click signal of the `sendButton` to a slot that sends a message to all peers. When the `sendButton` is clicked, the function gets executed. It first retrieves the message entered by the user from the `inputLineEdit`, and checks if it is empty. If it is, it displays an error message using a `QMessageBox`. Otherwise, it logs the message to the `debugTextEdit`, sends it to all connected peers using the `sendToAll` function of the `TcpClient` object, and clears the `inputLineEdit`.
 
-And here we are, at the end of the main with the last two lines, but fear not; there is more. `window.show()` makes the window visible to the user. The second line `return a.exec()` starts the event loop of the Qt application, which waits for and processes events.
 ```cpp
 window.show();
 return a.exec();
 ```
+And here we are, at the end of the main with the last two lines, but fear not; there is more. `window.show()` makes the window visible to the user. The second line `return a.exec()` starts the event loop of the Qt application, which waits for and processes events.
 
 Now we move on to the `TcpClient` class. I will not be explaining the header file at all, since this is just the declaration of the functions, slots, etc. The header file can be found [here](https://github.com/axelvanherle/P2P-TCP-chatclient-NP/blob/main/p2pchatclient/tcpclient.h) and the CPP file can be found [here](https://github.com/axelvanherle/P2P-TCP-chatclient-NP/blob/main/p2pchatclient/tcpclient.cpp).
 
-This code snippet defines the constructor for the `TcpClient` class, which is a subclass of the `QObject` class. This initializes the server socket, connects the `newConnection()` signal to the `handleNewConnection()` slot to handle new connections (this is self-explanatory), and starts listening for incoming connections on a specified port number. This means that when a new connection is made, the `handleNewConnection()` slot will be called.
 ```cpp
 TcpClient::TcpClient(QObject *parent)
     : QObject(parent)
@@ -139,8 +139,8 @@ TcpClient::TcpClient(QObject *parent)
     server->listen(QHostAddress::Any, 24042);
 }
 ```
+This code snippet defines the constructor for the `TcpClient` class, which is a subclass of the `QObject` class. This initializes the server socket, connects the `newConnection()` signal to the `handleNewConnection()` slot to handle new connections (this is self-explanatory), and starts listening for incoming connections on a specified port number. This means that when a new connection is made, the `handleNewConnection()` slot will be called.
 
-Here we define the `handleNewConnection()` slot. The purpose of this slot is to handle a new incoming connection from a client to the server. It also sends the list of currently connected peers to the new client using the `getPeers()` function, connects the `readyRead()` signal of the socket to the `readFromAll()` slot of the `TcpClient` object, adds the socket to the list of connected sockets, and emits a `newConnection()` signal to indicate that a new client has connected.
 ```cpp
 void TcpClient::handleNewConnection()
 {
@@ -153,8 +153,8 @@ void TcpClient::handleNewConnection()
     emit newConnection(socket);
 }
 ```
+Here we define the `handleNewConnection()` slot. The purpose of this slot is to handle a new incoming connection from a client to the server. It also sends the list of currently connected peers to the new client using the `getPeers()` function, connects the `readyRead()` signal of the socket to the `readFromAll()` slot of the `TcpClient` object, adds the socket to the list of connected sockets, and emits a `newConnection()` signal to indicate that a new client has connected.
 
-This code snippet defines the `sendToAll()` function. This function allows for the `TcpClient` object to send a message to all currently connected clients with a single call.
 ```cpp
 void TcpClient::sendToAll(QString message)
 {
@@ -164,8 +164,8 @@ void TcpClient::sendToAll(QString message)
     }
 }
 ```
+This code snippet defines the `sendToAll()` function. This function allows for the `TcpClient` object to send a message to all currently connected clients with a single call.
 
-This code snippet defines the `readFromAll()` slot for the class. The purpose of this slot is to read incoming data from all connected clients and emit a signal for each new message received. It uses a for each loop to iterate over the list of sockets, and check each one if there is data available to read. After reading, it converts it to a `QString` object, and emits a `newMessageReceived()` signal for each new message received.
 ```cpp
 void TcpClient::readFromAll()
 {
@@ -179,8 +179,9 @@ void TcpClient::readFromAll()
     }
 }
 ```
+This code snippet defines the `readFromAll()` slot for the class. The purpose of this slot is to read incoming data from all connected clients and emit a signal for each new message received. It uses a for each loop to iterate over the list of sockets, and check each one if there is data available to read. After reading, it converts it to a `QString` object, and emits a `newMessageReceived()` signal for each new message received.
 
-Now here's a big boy code block, are you ready? This code defines the `firstConnect()` function that connects to a peer with the specified IP address and port number. It sends a `"Hello there!"` message to the peer, waits for a response and if the connection is successful, the function reads the response using the `readAll()` function, which returns the response as a string. It then parses this string to extract new IP addresses and port numbers using a `std::istringstream` object and a `getline()` function. It then connects to each of these new peers in turn, sending another `"Hello there!"` message and waiting for a response before adding them to the list of connected sockets. If the connection is successful, the function emits a `newConnection()` signal, adds the new socket to the list of connected sockets using the `append()` function, and connects the `readyRead()` signal of the new socket to the `readFromAll()` slot using the `connect()` function. If the connection fails, the function prints an error message to the console.
+Now here's a big boy code block, are you ready? 
 ```cpp
 void TcpClient::firstConnect(std::string firstIp, int firstPort)
 {
@@ -241,8 +242,8 @@ void TcpClient::firstConnect(std::string firstIp, int firstPort)
     }
 }
 ```
+This code defines the `firstConnect()` function that connects to a peer with the specified IP address and port number. It sends a `"Hello there!"` message to the peer, waits for a response and if the connection is successful, the function reads the response using the `readAll()` function, which returns the response as a string. It then parses this string to extract new IP addresses and port numbers using a `std::istringstream` object and a `getline()` function. It then connects to each of these new peers in turn, sending another `"Hello there!"` message and waiting for a response before adding them to the list of connected sockets. If the connection is successful, the function emits a `newConnection()` signal, adds the new socket to the list of connected sockets using the `append()` function, and connects the `readyRead()` signal of the new socket to the `readFromAll()` slot using the `connect()` function. If the connection fails, the function prints an error message to the console.
 
-This function returns a list of peers connected to the `TcpClient` object as a string. The function first initializes the `peerList` variable with the string `"NEWCON"` followed by a newline character. Then, it loops through each socket in the `m_sockets` list and checks if it is in a connected state using the `QTcpSocket::state()` function. If the socket is connected, it retrieves the IP address of the peer using `socket->peerAddress().toIPv4Address()` and converts it to a `QString`. It then appends the IP address, followed by the string `":24042"` and a newline character, to the `peerList` variable. Finally, the function converts the variable to a `std::string` and returns it, for other functions to call and use.
 ```cpp
 std::string TcpClient::getPeers(void)
 {
@@ -261,6 +262,7 @@ std::string TcpClient::getPeers(void)
     return temp;
 }
 ```
+This function returns a list of peers connected to the `TcpClient` object as a string. The function first initializes the `peerList` variable with the string `"NEWCON"` followed by a newline character. Then, it loops through each socket in the `m_sockets` list and checks if it is in a connected state using the `QTcpSocket::state()` function. If the socket is connected, it retrieves the IP address of the peer using `socket->peerAddress().toIPv4Address()` and converts it to a `QString`. It then appends the IP address, followed by the string `":24042"` and a newline character, to the `peerList` variable. Finally, the function converts the variable to a `std::string` and returns it, for other functions to call and use.
 
 In conclusion, I found this project to be very enjoyable and challenging. I had never worked with QT or CPP in this way before, so it's safe to say that it has leveled up my skills. This was similar to what happened last year in the networking course when I worked with C, which gave me a better understanding of C itself. It turns out that OOP is not such a bad thing after all, who would've though? This project also gave me a better appreciation for QT. At the beginning of the project, I wanted to switch to Berkeley sockets like I was used to in C, but I ended up persevering and it was worth it. Not only am I now better at CPP, but this is also my first GUI-based application! Hooray! I went beyond what I was supposed to do, and I have to say that I'm pretty proud of it.
 
