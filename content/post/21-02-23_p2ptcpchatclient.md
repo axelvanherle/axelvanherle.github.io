@@ -17,7 +17,7 @@ If this is still not clear, have a look at this image. This explain the topology
 
 peer-to-peer             |  server based
 :-------------------------:|:-------------------------:
-<img src="img/21-02-23_p2ptcpchatclient/P2P_network.png" alt="p2pexample">  |  <img src="img/21-02-23_p2ptcpchatclient/Server_network.png" alt="serverexample">
+[p2pexample](../../static/img/21-02-23_p2ptcpchatclient/P2P_network.png)  |  [serverexample](../../static/img/21-02-23_p2ptcpchatclient/Server_network.png)
 
 Now that you know what it is about, I will explain my code and why I did certain things as best as I can. I will be using small code blocks, to explain my code in sections to make it easier to understand. Note that I am not writing this blog post to boast or even attempt to teach anyone anything. I simply enjoy writing and plan to maintain this blog, so I can look back on it. If someone picks something up or learns something new, even better. To get a bigger picture of the entire project, head to the GitHub found [here](https://github.com/axelvanherle/P2P-TCP-chatclient-NP).
 
