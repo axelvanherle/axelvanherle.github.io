@@ -1,1 +1,1 @@
-I am an Electronics ICT student with a strong passion for Linux, DevOps, automation, and web design. This website serves as a blog where I showcase my work and allow others to browse through them.
+I am a student with a strong passion for Linux, DevOps, automation, coding, and web design. This website serves as a blog where I showcase my work, catalogue it for the future, and post chronicles of my ventures.
