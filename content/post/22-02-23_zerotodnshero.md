@@ -5,7 +5,9 @@ date: 2023-02-22
 author: "Axel Vanherle"
 ---
 
-For a while now, I have been interested in setting up my own website or, at the very least, learning how to do so. Setting up a blog seemed like a good way to achieve this goal.
+I am excited to announce that we have a new website link! Our website can now be found at https://axelvanherle.xyz. In this post, I will share my journey of setting up a blog with a custom domain and playing around with DNS. So, without further ado, here is "From Zero to DNS Hero; My Journey Setting Up a Blog with a Custom Domain.
+
+So for a while now, I have been interested in setting up my own website or, at the very least, learning how to do so. Setting up a blog seemed like a good way to achieve this goal.
 
 To me, normally, setting up a website involves getting an old Optiplex computer, installing Linux on it, and serving my page with a web server like Caddy or Nginx. Doing this results in getting a boring old IPV4 address, but I always wanted a cool custom domain name, because who wants to go to a random IPv4 address?
 
