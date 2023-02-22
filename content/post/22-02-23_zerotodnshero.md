@@ -1,5 +1,5 @@
 ---
-title: From Zero to DNS Hero: My Journey Setting Up a Blog with a Custom Domain
+title: From Zero to DNS Hero; My Journey Setting Up a Blog with a Custom Domain
 tags: ['hugo', 'webdev', 'story']
 date: 2023-02-22
 author: "Axel Vanherle"
