@@ -12,8 +12,8 @@ pygmentsCodefencesGuessSyntax = true
 #googleAnalytics = "XXX"
 
 [Params]
-  #homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
-  subtitle = "Student electronics ICT."
+  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+  subtitle = "Electronics ICT Student."
   mainSections = ["post","posts"]
   logo = "img/icon.png" # Expecting square dimensions
   favicon = "img/favicon.png"
