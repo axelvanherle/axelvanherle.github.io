@@ -11,4 +11,4 @@ As a student of electronics ICT, or computer engineering as it's more commonly r
 
 If you have any questions or would like to connect, feel free to reach out to me on any of the platforms listed below. And for those curious, here is a list of the programming languages I frequently use based on my Github activity.
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=axelvanherle&langs_count=10&hide_progress=false&title_color=24292f&hide_border=false&show_icons=true&custom_title=Axel%20Vanherle's%20my%20most%20used%20languages.&bg_color=f6f8fa&layout=default)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=axelvanherle&langs_count=10&hide_progress=false&title_color=24292f&hide_border=false&show_icons=true&custom_title=Axel%20Vanherle's%20most%20used%20languages.&bg_color=f6f8fa&layout=default)](https://github.com/anuraghazra/github-readme-stats)
