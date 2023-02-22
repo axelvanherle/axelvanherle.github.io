@@ -22,3 +22,11 @@ Now, the real trouble began. Everything was set up correctly, but some people co
 My journey of setting up a blog and playing with DNS was a fun and educational experience. Although I encountered some challenges along the way, such as configuring the CNAME file and dealing with DNS propagation, I learned a lot about how websites work and how to set up a custom domain name.
 
 If you are interested in setting up your own website or blog, I encourage you to give it a try! There are plenty of resources available, and with some persistence and research, you can achieve your goals. Who knows, maybe you'll end up with a cool site like mine - axelvanherle.xyz 😉.
+
+To end this post i leave you all with a haiku;
+
+>It’s not DNS 
+>
+>There’s no way it’s DNS
+>
+>It was DNS
