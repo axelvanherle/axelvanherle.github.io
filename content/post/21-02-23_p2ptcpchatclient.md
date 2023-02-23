@@ -1,6 +1,6 @@
 ---
 title: Breaking Down the Code; Creating a P2P Chat Client with C++ and QTNetwork.
-tags: ['CPP', 'QTNetwork', 'P2P', 'chat client', 'network programming']
+tags: ['programing', 'howto', 'story']
 date: 2023-02-21
 author: "Axel Vanherle"
 ---
