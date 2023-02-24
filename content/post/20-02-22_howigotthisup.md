@@ -5,23 +5,24 @@ date: 2023-02-20
 author: "Axel Vanherle"
 ---
 
-Hello, this post is a quick explanation of how I got this website up and running.
+Hello, this post is an explanation of how I got this website up and running.
 
-### Rambling
+If you are reading this, the chances are that it is hosted on GitHub Pages. While there are numerous web-hosting options available, I preferred GitHub Pages for this project because of my prior experience with it. Additionally, it enables me to publish posts efficiently as I only have to place a markdown file in the correct folder, and GitHub actions, in combination with Hugo, do the rest of the work.
 
-First of all, you're probably reading this while it is hosted on GitHub Pages. I can host this wherever i want, but since i have done a previous project like this, using GitHub Pages is the most obvious choice for this project. It's also easy for me at add posts, as i just put a markdown file in the correct directory, and github actions takes care of the rest.
+The inspiration for this website came from [this video](https://youtu.be/ZFL09qhKi5I). I've been watching the content for a while and stumbled upon this video. I've always been interested in the world of web design, but it's always been somewhat of a foreign concept to me. I don't have the time to learn HTML, CSS, JS, or any other web design frameworks like React or whatnot. And to be honest, I don't really want to. So, when I found a tool like this, it sparked an interest in me to make a website like this.
 
-It all started with [this video](https://youtu.be/ZFL09qhKi5I). I've been watching the content for a while and stumbled upon this video. I've always been interested in the world of web design, but it's always been somewhat of a foreign concept to me. I don't have the time to learn HTML, CSS, JS, or any other web design frameworks like React or whatnot. And to be honest, I don't really want to. So, when I found a tool like this, it sparked an interest in me to make a website like this - something where everyone could submit posts, and using GitHub Actions to do all the heavy lifting.
+Once I had a good grasp of Hugo, setting up the website was straightforward. I spent some time familiarizing myself with the tool, and once I understood it, setting up the website was a breeze. It took less than 30 minutes.
 
-It wasn't difficult to set this up once I got the hang of Hugo. I spent some time playing with it until I understood how it worked. And once I understood it, it was smooth sailing from there. Now that i've used hugo a few times setting up a website was this was a breeze. It took maybe 30 minutes?
+So how did i do it?
 
-### How
+First, you need to create a GitHub repository for your website. Once you have created the repository, you can add a Hugo site to it. Hugo is a popular static site generator that allows you to create websites quickly and easily. You can install Hugo on your local machine and use it to create your site.
 
-I started with a simple GitHub repository, to which I added a Hugo site. After i had a site, i needed a theme. I had starred a bunch of themes, but this one stood out to me, it's simple, but clean. Then i added a github actions to automate the building part for me.
+Next, you need to choose a theme for your website. You can browse and select a theme from the many available options. Once you have selected a theme, you need to add it to your Hugo site.
 
-Basically, once you add a post, the hugo workflow gets triggered that builds the website using the configuration, theme, etc. that I set up. This workflow publishes the built website to the gh-pages branch. Once that is pushed, another workflow gets triggered that renews the GitHub Page. All of this happens in under a minute, so it's all pretty real-time.
+After adding the theme, you can use GitHub actions to automate the building process. GitHub actions are a set of scripts that can be triggered by certain events. In this case, you can set up a GitHub action that is triggered whenever you add a new post to your site.
 
-### Questions
+The GitHub action will use the Hugo configuration and theme you have set up to build your website automatically. Once the website is built, the GitHub action will publish it to the gh-pages branch. This is a branch that GitHub uses to host websites.
 
-If you have any questions, you can ask you can learn how to contact me on my about page.
+Once the website is published to the gh-pages branch, another GitHub action is triggered that renews the GitHub page. This process is very fast and happens in under a minute, so your website is updated in real-time.
 
+If you have any questions, please don't hesitate to reach out to me via my About page.
