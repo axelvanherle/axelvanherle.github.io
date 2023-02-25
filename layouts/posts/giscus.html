@@ -1,4 +1,6 @@
-<script src="https://giscus.app/client.js"
+{{- if isset .Site.Params "giscus" -}}
+  {{- if and (isset .Site.Params.giscus "repo") (not (eq .Site.Params.giscus.repo "" )) (eq (.Params.disable_comments | default false) false) -}}
+        <script src="https://giscus.app/client.js"
         data-repo="axelvanherle/axelvanherle.github.io"
         data-repo-id="R_kgDOIxbphw"
         data-category="Articles"
@@ -13,3 +15,5 @@
         crossorigin="anonymous"
         async>
 </script>
+  {{- end -}}
+{{- end -}}
