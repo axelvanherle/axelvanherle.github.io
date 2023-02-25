@@ -24,10 +24,10 @@ pygmentsCodefencesGuessSyntax = true
   showRelatedPosts = true
   
 [params.giscus]
-repo = "cdwilson/cdwilson.dev"
-repoID = "R_kgDOGzJrfg"
+repo = "axelvanherle/axelvanherle.github.io"
+repoID = "R_kgDOIxbphw"
 category = "Articles"
-categoryID = "DIC_kwDOGzJrfs4CP2TM"
+categoryID = "DIC_kwDOIxbph84CUdTq"
 mapping = "og:title"
 reactionsEnabled = "1"
 emitMetadata = "0"
