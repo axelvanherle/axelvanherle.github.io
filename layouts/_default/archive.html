@@ -1,32 +1,49 @@
-{{ define "main" }}
-<section>
-  {{ $type := .Type }}
-  {{ $.Scratch.Set "count" 1 }}
+{{- define "main" }}
 
-  {{ range (.Site.RegularPages.GroupByDate "2006") }}
-    {{ if and (gt .Key 1) (gt (where .Pages "Type" $type) 0) }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- end }}
+</header>
 
-      {{ range (where .Pages "Type" $type) }}
-        {{ if (eq ($.Scratch.Get "count") 1) }}
-          {{ $.Scratch.Set "count" 0 }}
-          <h1>{{ .Date.Format "2006" }}</h1>
-        {{ end }}
-      {{ end }}
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 
-      {{ $.Scratch.Set "count" 1 }}
+{{- if site.Params.ShowAllPagesInArchive }}
+{{- $pages = site.RegularPages }}
+{{- end }}
 
-      <ul>
-      {{ range (where .Pages "Type" $type) }}
-        {{ if (ne .Params.hidden true) }}
-          <li>
-            <a href="{{ .RelPermalink }}">
-              <span>{{ .Date.Format "02 Jan" }}</span> — {{ .Title }}
-            </a>
-          </li>
-        {{ end }}
-      {{ end }}
-      </ul>
-    {{ end }}
-  {{ end }}
-</section>
-{{ end }}
+{{- range $pages.GroupByPublishDate "2006" }}
+{{- if ne .Key "0001" }}
+<div class="archive-year">
+  <h2 class="archive-year-header">
+    {{- replace .Key "0001" "" }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup>
+  </h2>
+  {{- range .Pages.GroupByDate "January" }}
+  <div class="archive-month">
+    <h3 class="archive-month-header">{{- .Key }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup></h3>
+    <div class="archive-posts">
+      {{- range .Pages }}
+      {{- if eq .Kind "page" }}
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">
+          {{- .Title | markdownify }}
+          {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+        </h3>
+        <div class="archive-meta">
+          {{- partial "post_meta.html" . -}}
+        </div>
+        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+      </div>
+      {{- end }}
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+</div>
+{{- end }}
+{{- end }}
+
+{{- end }}{{/* end main */}}
