@@ -87,16 +87,3 @@ pygmentsCodefencesGuessSyntax = true
     name = "Tags"
     url = "tags"
     weight = 3
-    
-[params.giscus]
-repo = "axelvanherle/axelvanherle.github.io"
-repoID = "R_kgDOIxbphw"
-category = "Articles"
-categoryID = "DIC_kwDOIxbph84CUdTq"
-mapping = "pathname"
-reactionsEnabled = "1"
-emitMetadata = "0"
-inputPosition = "bottom"
-theme = "light"
-lang = "en"
-loading = "lazy"
