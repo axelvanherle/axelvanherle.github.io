@@ -44,3 +44,8 @@ pygmentsCodefencesGuessSyntax = true
     name = "Tags"
     url = "tags"
     weight = 3
+    
+[[menu.main]]
+    name = "Archive"
+    url = "archives"
+    weight = 3
