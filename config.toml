@@ -47,5 +47,5 @@ pygmentsCodefencesGuessSyntax = true
     
 [[menu.main]]
     name = "Archive"
-    url = "archives"
+    url = "page/archive/"
     weight = 3
