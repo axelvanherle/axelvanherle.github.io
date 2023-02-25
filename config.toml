@@ -22,19 +22,6 @@ pygmentsCodefencesGuessSyntax = true
   socialShare = true
   delayDisqus = true
   showRelatedPosts = true
-  
-[params.giscus]
-repo = "axelvanherle/axelvanherle.github.io"
-repoID = "R_kgDOIxbphw"
-category = "Articles"
-categoryID = "DIC_kwDOIxbph84CUdTq"
-mapping = "og:title"
-reactionsEnabled = "1"
-emitMetadata = "0"
-inputPosition = "bottom"
-theme = "light"
-lang = "en"
-loading = "lazy"
 
 [Author]
   name = "Axel Vanherle"
