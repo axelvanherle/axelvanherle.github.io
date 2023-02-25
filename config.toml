@@ -22,6 +22,19 @@ pygmentsCodefencesGuessSyntax = true
   socialShare = true
   delayDisqus = true
   showRelatedPosts = true
+  
+[params.giscus]
+repo = "cdwilson/cdwilson.dev"
+repoID = "R_kgDOGzJrfg"
+category = "Articles"
+categoryID = "DIC_kwDOGzJrfs4CP2TM"
+mapping = "og:title"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+theme = "light"
+lang = "en"
+loading = "lazy"
 
 [Author]
   name = "Axel Vanherle"
