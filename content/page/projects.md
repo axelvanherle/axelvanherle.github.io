@@ -1,4 +1,5 @@
 ---
+title:
 subtitle: The Art of My Craft; A Collection of Completed Projects
 share: false
 comments: false
