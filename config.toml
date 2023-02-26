@@ -38,7 +38,7 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     name = "Tags"
     url = "tags"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
     name = "About"
@@ -48,4 +48,4 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     name = "Projects"
     url = "page/projects/"
-    weight = 3
+    weight = 4
