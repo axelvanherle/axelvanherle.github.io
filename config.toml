@@ -34,6 +34,11 @@ pygmentsCodefencesGuessSyntax = true
     name = "Home"
     url = ""
     weight = 1
+    
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 3
 
 [[menu.main]]
     name = "About"
@@ -43,9 +48,4 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     name = "Projects"
     url = "page/projects/"
-    weight = 3
-    
-[[menu.main]]
-    name = "Tags"
-    url = "tags"
     weight = 3
