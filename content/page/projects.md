@@ -1,9 +1,10 @@
 ---
-title: The Art of My Craft; A Collection of Completed Projects
-subtitle: This page contains an archive of some of the projects I have completed over the years. While many of these projects have taught me valuable skills and insights, not all of them are showcased here. The purpose of this page is not to boast about my accomplishments but rather to serve as a platform for cataloging my work and preventing the loss of my projects. It is worth noting that this page is consistent with the purpose of the rest of my blog.
+subtitle: The Art of My Craft; A Collection of Completed Projects
 share: false
 comments: false
 ---
+
+This page contains an archive of some of the projects I have completed over the years. While many of these projects have taught me valuable skills and insights, not all of them are showcased here. The purpose of this page is not to boast about my accomplishments but rather to serve as a platform for cataloging my work and preventing the loss of my projects. It is worth noting that this page is consistent with the purpose of the rest of my blog.
 
 # This blog!
 Found [here](https://github.com/axelvanherle/axelvanherle.github.io).
