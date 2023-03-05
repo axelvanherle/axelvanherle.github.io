@@ -1,1 +1,1 @@
-I am a student with a strong passion for Linux, DevOps, automation, coding, and web design. This website serves as a blog where I showcase my work, catalogue it for the future, and post chronicles of my ventures.
+I am interested in a variety of areas including programming, automation, Linux, web design, DevOps, and anything related to free and open-source software.
