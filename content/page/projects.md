@@ -7,6 +7,17 @@ comments: false
 
 This page contains an archive of some of the projects I have completed over the years. While many of these projects have taught me valuable skills and insights, not all of them are showcased here. The purpose of this page is not to boast about my accomplishments but rather to serve as a platform for cataloging my work and preventing the loss of my projects. It is worth noting that this page is consistent with the purpose of the rest of my blog.
 
+# AxelVanherleResume
+This is a private project, but i make my CV using LaTeX and build it using GitHub actions.
+
+# ZMQ-Benternet-NP
+Found [here](https://github.com/axelvanherle/ZMQ-Benternet-NP).
+This is a project for Network Programming. The project is about setting up a Deep Net Distributed Computing Cloud called B-Net, providing various services that can be used by individuals and groups, with flexible group sizes and the ability for everyone to participate in this network, where each individual works on their own part or service within the network.
+
+# IR-Communication-ES2
+Found [here](https://github.com/axelvanherle/IR-Communication-ES2).
+The objective of this project is to develop a wireless communication and distance measurement system utilizing self-made PCBs equipped with IR LEDs. This system has the ability to transmit messages and determine the distance between devices. Messages can be transmitted via an Arduino (using UART) or a simple button through the IR LED. Upon transmission, the receiver PCB detects the distance from the sender PCB and illuminates an 4 unit LED bar to indicate distance, and a regular LED to indicate a signal. This enables sending messages via UART or transmitting Morse code (for example) over IR.
+
 # This blog!
 Found [here](https://github.com/axelvanherle/axelvanherle.github.io).
 
