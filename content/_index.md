@@ -1,1 +1,1 @@
-I am interested in a variety of areas including programming, automation, Linux, web design, DevOps, and anything related to free and open-source software.
+To learn more about why i made this blog, and how to contact me visit the "about" page.

@@ -8,7 +8,7 @@ pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 
 [Params]
-  subtitle = "Electronics ICT Student."
+  subtitle = "A electronics ICT student who's into all things linux, programing, automation, webdev and anything related to FOSS."
   mainSections = ["post","posts"]
   logo = "img/icon.png"
   favicon = "img/favicon.png"
@@ -34,18 +34,18 @@ pygmentsCodefencesGuessSyntax = true
     name = "Home"
     url = ""
     weight = 1
-    
-[[menu.main]]
-    name = "Tags"
-    url = "tags"
-    weight = 2
 
 [[menu.main]]
     name = "About"
     url = "page/about/"
-    weight = 3
-    
+    weight = 2
+
 [[menu.main]]
     name = "Projects"
     url = "page/projects/"
+    weight = 3
+    
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
     weight = 4
