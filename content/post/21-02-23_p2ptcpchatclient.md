@@ -3,6 +3,7 @@ title: Breaking Down the Code; Creating a P2P Chat Client with C++ and QTNetwork
 tags: ['programing', 'howto', 'story']
 date: 2023-02-21
 author: "Axel Vanherle"
+draft: true
 ---
 
 In this blog post, we'll explore how to create a peer-to-peer chat client using C++ and QTNetwork. This chat client allows users to connect with each other using the TCP protocol, communicate through sending and receiving messages, and receive a list of connected peers on first connect. The chat client is designed to be extensible, with new peers being added dynamically, and with the ability to send and receive messages to and from all connected peers.
