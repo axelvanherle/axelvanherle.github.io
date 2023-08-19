@@ -1,3 +1,10 @@
+---
+title: How i beat Netflix's location lock.
+tags: ['life', 'linux']
+date: 2023-08-19
+author: "Axel Vanherle"
+---
+
 # How i beat Netflix's location lock.
 Netflix recently introduced a new feature to their service, that being "Netflix-Households". And to put it bluntly, it has fucked me. I can no longer watch Netflix in my dorm room, without paying whatever Netflix prices it as. I no longer felt like using Netflix at all because of this, so i decided that i was going to selfhost whatever the equivalent of it is. 
 
