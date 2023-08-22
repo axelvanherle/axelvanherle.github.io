@@ -3,6 +3,7 @@ title: How i got this website up and running.
 tags: ['webdev', 'devops', 'howto']
 date: 2023-02-20
 author: "Axel Vanherle"
+draft: true
 ---
 
 Hello, this post is an explanation of how I got this website up and running.
