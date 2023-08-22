@@ -1,1 +1,0 @@
-To learn more about why i made this blog, and how to contact me visit the "about" page.
