@@ -1,0 +1,5 @@
+baseURL = 'https://axelvanherle.xyz'
+languageCode = 'en-us'
+title = "Axel's Webpage"
+
+theme = 'lugo'
