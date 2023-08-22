@@ -3,6 +3,7 @@ title: From Zero to DNS Hero; My Journey Setting Up a Blog with a Custom Domain
 tags: ['howto', 'story', 'webdev']
 date: 2023-02-22
 author: "Axel Vanherle"
+draft: true
 ---
 
 I am excited to announce that we have a new website link! Our website can now be found at https://axelvanherle.xyz. In this post, I will share my journey of setting up a custom domain and playing around with DNS. So, without further ado, here is "From Zero to DNS Hero; My Journey Setting Up a Blog with a Custom Domain.
