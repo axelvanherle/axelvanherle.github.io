@@ -1,21 +1,57 @@
 {{ define "title" -}}
 {{ .Title }}
+
+<style>
+.content-wrapper {
+    display: flex;
+    align-items: start;
+}
+
+.text-content {
+    flex: 0 0 80%;
+    margin-right : 20px;
+}
+
+.image-content {
+    flex: 0 0 20%;
+    text-align: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-content p {
+    font-style: italic;
+    margin-top: 5px;
+}
+</style>
+
 <h2> Introduction </h2>
-<p>Hi, I'm Axel Vanherle, a Computer Engineering student at PXL. This is my little slice of the internet where I explore tech and share insights, take a look around.</p>
+<div class="content-wrapper">
+<div class="text-content">
+    <p>Hi, I'm Axel Vanherle, a Computer Engineering student at PXL. This is my little slice of the internet where I explore tech and share insights, take a look around.</p>
+</div>
+<div class="image-content">
+    <img src="/img/axel.jpg" alt="Axel Vanherle" width=70%>
+    <p>Me.</p>
+</div>
+</div>
 
 <h3>Check these out!</h3>
  <ul>
-	 <li><a href="/blog">Blogposts</a></li>
 	 <li><a href="/about">About me</a></li>
-	 <li><a href="/contact">Contact me</a></li>
+	 <li><a href="/blog">Blogposts</a></li>
 	 <li><a href="/programs">Programs i use</a></li>
+	 <li><a href="/contact">Contact me</a></li>
 </ul> 	
 
 <br><hr><br>
 
 <h2> Recent blogposts </h2>
 
-{{ range ( first 3 ( where .Site.Pages "Type" "blog" ).ByDate ) }}
+{{ range ( first 10 ( where .Site.Pages "Type" "blog" ).ByDate ) }}
   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 {{ end }}
 {{- end }}
