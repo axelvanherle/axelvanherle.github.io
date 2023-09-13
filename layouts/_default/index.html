@@ -41,8 +41,8 @@
 
 <h3>Check these out!</h3>
  <ul>
+	 <li><a href="/blog">All my blogposts</a></li>
 	 <li><a href="/about">About me</a></li>
-	 <li><a href="/blog">Blogposts</a></li>
 	 <li><a href="/programs">Programs i use</a></li>
 	 <li><a href="/contact">Contact me</a></li>
 </ul> 	
@@ -51,9 +51,14 @@
 
 <h2> Recent blogposts </h2>
 
-{{- range (.Paginate ( first 10 .Pages.ByDate )).Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-{{- end}}
+{{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+    <article>
+        <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+        <p style="font-size: 0.8em;">{{ .Summary }}</p>
+	<p><a href="{{ .RelPermalink }}">Read More</a></p>
+	<br>
+    </article>
+{{ end }}
 
 <br><hr><br>
 
