@@ -2,25 +2,25 @@
 
 <h2>Introduction</h2>
 <div class="content-wrapper">
-  <div class="text-content">
-    <p>
-      Hi, I'm Axel Vanherle, a Computer Engineering student at PXL. This is my
-      little slice of the internet where I explore tech and share insights, take
-      a look around.
-    </p>
-  </div>
-  <div class="image-content">
-    <img src="/img/axel.webp" alt="Axel Vanherle" width="70%" />
-    <p>Me.</p>
-  </div>
+	<div class="text-content">
+		<p>
+			Hi, I'm Axel Vanherle, a Computer Engineering student at PXL. This is my
+			little slice of the internet where I explore tech and share insights, take
+			a look around.
+		</p>
+	</div>
+	<div class="image-content">
+		<img src="/img/axel.webp" alt="Axel Vanherle" width="70%" />
+		<p>Me.</p>
+	</div>
 </div>
 
 <h3>Check these out!</h3>
 <ul>
-  <li><a href="/blog">All my blogposts</a></li>
-  <li><a href="/about">About me</a></li>
-  <li><a href="/programs">Programs i use</a></li>
-  <li><a href="/contact">Contact me</a></li>
+	<li><a href="/blog">All my blogposts</a></li>
+	<li><a href="/about">About me</a></li>
+	<li><a href="/programs">Programs i use</a></li>
+	<li><a href="/contact">Contact me</a></li>
 </ul>
 
 <br />
@@ -31,10 +31,10 @@
 
 {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
 <article>
-  <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
-  <p style="font-size: 0.8em">{{ .Summary }}</p>
-  <p style="font-size: 0.8em"><a href="{{ .RelPermalink }}">Read More</a></p>
-  <br />
+	<p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+	<p style="font-size: 0.8em">{{ .Summary }}</p>
+	<p style="font-size: 0.8em"><a href="{{ .RelPermalink }}">Read More</a></p>
+	<br />
 </article>
 {{ end }}
 
