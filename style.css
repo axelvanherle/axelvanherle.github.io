@@ -1,84 +1,87 @@
 body {
-  background: #33383d;
-  color: #fcfffc;
-  max-width: 850px;
-  margin: auto;
-  padding: 0 16px;
-  margin-bottom: 500px;
-  scrollbar-color: gray #151515;
-  font-family: sans-serif;
+	background: #33383d;
+	color: #fcfffc;
+	max-width: 850px;
+	margin: auto;
+	padding: 0 16px;
+	margin-bottom: 500px;
+	scrollbar-color: gray #151515;
+	font-family: sans-serif;
 }
 
 a {
-  color: #be6e46;
+	color: #be6e46;
 }
 
 a:visited {
-  color: darkgoldenrod;
+	color: darkgoldenrod;
 }
 
 main {
-  max-width: 800px;
-  margin: auto;
+	max-width: 800px;
+	margin: auto;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 header h1 {
-  text-align: center;
+	text-align: center;
 }
 
 footer {
-  text-align: center;
-  clear: both;
+	text-align: center;
+	clear: both;
 }
 
 /* For TAGLIST.HTML */
 .taglist {
-  text-align: center;
-  clear: both;
+	text-align: center;
+	clear: both;
 }
 
 /* For NEXTPREV.HTML */
 #nextprev {
-  /* The container for both the previous and next articles. */
+	/* The container for both the previous and next articles. */
 }
+
 #prevart {
-  float: left;
-  text-align: left;
+	float: left;
+	text-align: left;
 }
+
 #nextart {
-  float: right;
-  text-align: right;
+	float: right;
+	text-align: right;
 }
+
 #nextart,
 #prevart {
-  max-width: 33%;
+	max-width: 33%;
 }
 
 .content-wrapper {
-  display: flex;
-  align-items: start;
+	display: flex;
+	align-items: start;
 }
 
 .text-content {
-  flex: 0 0 80%;
-  margin-right: 20px;
+	flex: 0 0 80%;
+	margin-right: 20px;
 }
 
 .image-content {
-  flex: 0 0 20%;
-  text-align: center;
+	flex: 0 0 20%;
+	text-align: center;
 }
 
 .image-content img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .image-content p {
-  font-style: italic;
-  margin-top: 5px;
+	font-style: italic;
+	margin-top: 5px;
 }
