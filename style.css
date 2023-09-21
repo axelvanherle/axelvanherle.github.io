@@ -1,20 +1,20 @@
 body {
-	background: #33383d;
-	color: #fcfffc;
+	background: #121118;
+	color: #EFE9E7;
 	max-width: 850px;
 	margin: auto;
 	padding: 0 16px;
 	margin-bottom: 500px;
-	scrollbar-color: gray #151515;
+	scrollbar-color: #EFE9E7;
 	font-family: sans-serif;
 }
 
 a {
-	color: #be6e46;
+	color: #E28413;
 }
 
 a:visited {
-	color: darkgoldenrod;
+	color: #C1292E;
 }
 
 main {
