@@ -20,7 +20,7 @@
 &lt;p>To clone our repo simply run &lt;code>git clone --bare &amp;lt;git-repo-url&amp;gt; $HOME/.cfg&lt;/code>. This command clones the repo to &lt;code>.cfg&lt;/code> located in your home directory. After cloning we set up a alias in our current shell scope by running &lt;code>alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'&lt;/code>. We do this in this scope because your freshly pushed dotfiles should contain this alias, so if you haven&amp;rsquo;t added it already now is the time.&lt;/p>
 &lt;p>When we have the repo cloned we are ready to checkout our freshly cloned repo. In simple terms, this deploys our dotfiles on our system. To do this, run &lt;code>config checkout&lt;/code>. You might get an error about overwriting files. To &amp;ldquo;fix&amp;rdquo; this error we are going to be moving the files that are giving us trouble into a different folder named &lt;code>.config-backup&lt;/code>. We do this in the off-chance anything goes wrong.&lt;/p>
 &lt;p>Run&lt;/p>
-&lt;pre tabindex="0">&lt;code>mkdir -p .config-backup &amp;amp;&amp;amp; \
+&lt;pre tabindex="0">&lt;code>sudo mkdir -p .config-backup &amp;amp;&amp;amp; \
 config checkout 2&amp;gt;&amp;amp;1 | grep -E &amp;#34;\s+\.&amp;#34; | awk {&amp;#39;print $1&amp;#39;} | \
 while read -r file; do
 dir=$(dirname &amp;#34;.config-backup/${file}&amp;#34;)
