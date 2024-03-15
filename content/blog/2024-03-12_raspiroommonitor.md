@@ -71,3 +71,6 @@ In other words, everything that I've setup is pretty user-friendly. All the user
 ## In conclusion
 
 It's been a fun project to work on that's brought me some insight into my room and what's going on around it. It's not something that i really needed, but it sure is a nice addition for a few bucks spent. On a quick calculation i spent around 7 bucks on it. Most of that budget went to the ESP32, which cost me ~4 euros. I was lucky to have a bunch of stuff already laying about like the Raspberry Pi, a breadboard, the DHT11 sensor, jumper wires,... The only things i needed to get were the DHT22, BH1750 and the ESP32. I could've built this project using only what i already had laying around (which i did and you can find [here](https://github.com/axelvanherle/raspi-dht11-monitor)) however this solution felt a bit too simple for me, so i expanded into what became this project.
+
+## The GitHub
+You can find that -> https://github.com/axelvanherle/raspi-room-monitor <- there.
