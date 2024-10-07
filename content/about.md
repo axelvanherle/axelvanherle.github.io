@@ -3,10 +3,9 @@ title: "About"
 date: 2023-08-22T16:23:19+02:00
 draft: false
 ---
-Hi there. If you clicked on this page, you probably want to know more about me. So, here goes. I'm currently a student and plan on being one for a bit longer. I don't have an interest in working full-time as of now, as I still enjoy studying. I plan on pursuing a master's degree, and perhaps a doctorate if I feel inclined. But who knows? A lot can change.
 
-I've been interested in technology for as long as I can remember. From gaming with my dad to tinkering with my grandmother's computer system. Once I enrolled in my current field of study, Electronics ICT, this passion truly ignited. I'm particularly drawn to the ICT aspect of things. I'm especially interested in Linux and FOSS software. Over time, I've developed a more conservative view on software, preferring simple, lightweight applications over their complex counterparts.
+Currently pursuing a Master's degree in Industrial Engineering with a focus on Electronics-ICT at Hasselt University, with an expected graduation in June 2027.
 
-This site is one of the projects I took on on as my passion grew. I believe everyone should have a personal site they can call their own. I created this site as a way to share my passion for the things I care about and the projects I undertake.
+I completed my Professional Bachelor's degree in Electronics-ICT at Hogeschool PXL (September 2021 - June 2024), where I graduated cum laude. During my time at PXL, I also pursued a creditcontract for a Professional Bachelor's degree in Business Management (February 2024 - June 2024), achieving summa cum laude honors.
 
-If you'd like to contact me, details are available on my [contact](/contact/) page. And if you're curious about the software I use daily, feel free to check out the [programs](/programs/) page.
+Prior to this, I graduated with a High School Diploma in Media and Web Design from Atlas College Kunst & Vormgeving in June 2021. Before that, I also earned a High School Diploma in Latin / Humanities and Social Sciences from Don Bosco Hechtel in September 2017.
