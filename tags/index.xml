@@ -4,18 +4,18 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>OpenweatherAPI &amp;amp; System metrics&lt;/th>
-&lt;th>Bedroom &amp;amp; Bathroom&lt;/th>
+&lt;th style="text-align: left">OpenweatherAPI &amp;amp; System metrics&lt;/th>
+&lt;th style="text-align: left">Bedroom &amp;amp; Bathroom&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>&lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db1.png" alt="Dashboard 1">&lt;/td>
-&lt;td>&lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db2.png" alt="Dashboard 2">&lt;/td>
+&lt;td style="text-align: left">&lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db1.png" alt="Dashboard 1">&lt;/td>
+&lt;td style="text-align: left">&lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db2.png" alt="Dashboard 2">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db4.png" alt="Dashboard 4">&lt;/td>
-&lt;td>&lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db3.png" alt="Dashboard 3">&lt;/td>
+&lt;td style="text-align: left">&lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db4.png" alt="Dashboard 4">&lt;/td>
+&lt;td style="text-align: left">&lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db3.png" alt="Dashboard 3">&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -123,13 +123,9 @@ mkdir -p &amp;#34;${dir}&amp;#34;
 mv &amp;#34;${file}&amp;#34; &amp;#34;.config-backup/${file}&amp;#34;
 done &amp;amp;&amp;amp; config config --local status.showUntrackedFiles no
 &lt;/code>&lt;/pre>&lt;p>This is mostly freeloading off the original guides script, but i had an issue where it didn&amp;rsquo;t create parent directories so i added the while loop with a little bit of help from my buddy ChatGPT. I also added the &lt;code>config config --local status.showUntrackedFiles no&lt;/code> line at the end, so we don&amp;rsquo;t have to run that separately. Like i said, I&amp;rsquo;m lazy.&lt;/p>
-&lt;p>Once that has run without any errors you&amp;rsquo;re done, you can now clone and sync your dotfiles on as many systems as you want.&lt;/p></description></item><item><title>About</title><link>https://axelvanherle.xyz/about/</link><pubDate>Tue, 22 Aug 2023 16:23:19 +0200</pubDate><guid>https://axelvanherle.xyz/about/</guid><description>&lt;p>Hi there. If you clicked on this page, you probably want to know more about me. So, here goes. I&amp;rsquo;m currently a student and plan on being one for a bit longer. I don&amp;rsquo;t have an interest in working full-time as of now, as I still enjoy studying. I plan on pursuing a master&amp;rsquo;s degree, and perhaps a doctorate if I feel inclined. But who knows? A lot can change.&lt;/p>
-&lt;p>I&amp;rsquo;ve been interested in technology for as long as I can remember. From gaming with my dad to tinkering with my grandmother&amp;rsquo;s computer system. Once I enrolled in my current field of study, Electronics ICT, this passion truly ignited. I&amp;rsquo;m particularly drawn to the ICT aspect of things. I&amp;rsquo;m especially interested in Linux and FOSS software. Over time, I&amp;rsquo;ve developed a more conservative view on software, preferring simple, lightweight applications over their complex counterparts.&lt;/p>
-&lt;p>This site is one of the projects I took on on as my passion grew. I believe everyone should have a personal site they can call their own. I created this site as a way to share my passion for the things I care about and the projects I undertake.&lt;/p>
-&lt;p>If you&amp;rsquo;d like to contact me, details are available on my &lt;a href="https://axelvanherle.xyz/contact/">contact&lt;/a> page. And if you&amp;rsquo;re curious about the software I use daily, feel free to check out the &lt;a href="https://axelvanherle.xyz/programs/">programs&lt;/a> page.&lt;/p></description></item><item><title>Contact Me</title><link>https://axelvanherle.xyz/contact/</link><pubDate>Tue, 22 Aug 2023 16:23:19 +0200</pubDate><guid>https://axelvanherle.xyz/contact/</guid><description>&lt;ul>
-&lt;li>&lt;a href="mailto:axelvanherle@outlook.com">axelvanherle@outlook.com&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>If you are intrested, you can also find some of my work on &lt;a href="https://github.com/axelvanherle">github&lt;/a>.&lt;/p></description></item><item><title>How i beat Netflix's location lock.</title><link>https://axelvanherle.xyz/blog/2023-08-19_arrkotje/</link><pubDate>Sat, 19 Aug 2023 00:00:00 +0000</pubDate><guid>https://axelvanherle.xyz/blog/2023-08-19_arrkotje/</guid><description>&lt;h1 id="how-i-beat-netflixs-location-lock">How i beat Netflix&amp;rsquo;s location lock.&lt;/h1>
+&lt;p>Once that has run without any errors you&amp;rsquo;re done, you can now clone and sync your dotfiles on as many systems as you want.&lt;/p></description></item><item><title>About</title><link>https://axelvanherle.xyz/about/</link><pubDate>Tue, 22 Aug 2023 16:23:19 +0200</pubDate><guid>https://axelvanherle.xyz/about/</guid><description>&lt;p>Currently pursuing a Master&amp;rsquo;s degree in Industrial Engineering with a focus on Electronics-ICT at Hasselt University, with an expected graduation in June 2027.&lt;/p>
+&lt;p>I completed my Professional Bachelor&amp;rsquo;s degree in Electronics-ICT at Hogeschool PXL (September 2021 - June 2024), where I graduated cum laude. During my time at PXL, I also pursued a creditcontract for a Professional Bachelor&amp;rsquo;s degree in Business Management (February 2024 - June 2024), achieving summa cum laude honors.&lt;/p>
+&lt;p>Prior to this, I graduated with a High School Diploma in Media and Web Design from Atlas College Kunst &amp;amp; Vormgeving in June 2021. Before that, I also earned a High School Diploma in Latin / Humanities and Social Sciences from Don Bosco Hechtel in September 2017.&lt;/p></description></item><item><title>How i beat Netflix's location lock.</title><link>https://axelvanherle.xyz/blog/2023-08-19_arrkotje/</link><pubDate>Sat, 19 Aug 2023 00:00:00 +0000</pubDate><guid>https://axelvanherle.xyz/blog/2023-08-19_arrkotje/</guid><description>&lt;h1 id="how-i-beat-netflixs-location-lock">How i beat Netflix&amp;rsquo;s location lock.&lt;/h1>
 &lt;p>Netflix recently introduced a new feature to their service, that being &amp;ldquo;Netflix-Households&amp;rdquo;. And to put it bluntly, it has fucked me. I can no longer watch Netflix in my dorm room, without paying whatever Netflix prices it as. I no longer felt like using Netflix at all because of this, so i decided that i was going to selfhost whatever the equivalent of it is.&lt;/p>
 &lt;p>A quick note, i go over most of the software used briefly. If you want to know more, i encourage you to research it.&lt;/p>
 &lt;h2 id="first-things-first">First things first&lt;/h2>
@@ -149,42 +145,4 @@ You can think of Plex as the Netflix part of the whole operation. It&amp;rsquo;s
 &lt;p>So, to recap; the user requested Foo. That got sent to radarr if it&amp;rsquo;s a movie, and sonarr if it were a show. Radarr or sonarr search my favorite torrent sites using prowlarr based on the requirements i set. For example, i set it to look for 4K Remux media first, then 4K Bluray, and it goes down the list, you get the picture.&lt;/p>
 &lt;p>Once it found suitable media that matches my requirements, it gets sent to qbittorrent. This tool is responsible for downloading the media.
 Now, sonarr or radarr watch the progress, and when it&amp;rsquo;s done downloading they move it to another directory and rename it to a less cluttered name.&lt;/p>
-&lt;p>That&amp;rsquo;s pretty much it. I messed around with systemd (for my vpn), and docker to get some of these services up and running. Other than that, i also used the AUR and some official packages. This is the gist of how i set it up, there were some other nuisance involved, but i didn&amp;rsquo;t mention them here.&lt;/p></description></item><item><title>Programs i use</title><link>https://axelvanherle.xyz/programs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://axelvanherle.xyz/programs/</guid><description>&lt;p>You can probably find what i list here on my GitHub in my &lt;a href="https://github.com/axelvanherle/dotfiles">dotfiles&lt;/a> repo.&lt;/p>
-&lt;h1 id="basic">Basic&lt;/h1>
-&lt;h3 id="operating-system">Operating system&lt;/h3>
-&lt;ul>
-&lt;li>My favorite disto is Arch, this is also what i run on my server. On my laptop and desktop i run EndeavourOS simply because it&amp;rsquo;s easier to install, and comes with certain things set up OOB, like an AUR helper.&lt;/li>
-&lt;/ul>
-&lt;h3 id="terminal">Terminal&lt;/h3>
-&lt;ul>
-&lt;li>I currently use Alacritty, it&amp;rsquo;s minimal enough OOB for me, and offers a way to easily customize it to my liking.&lt;/li>
-&lt;/ul>
-&lt;h3 id="shell">Shell&lt;/h3>
-&lt;ul>
-&lt;li>I use zsh as my shell. It&amp;rsquo;s posix compliant, and allows to me add plugins and shit like that. I used Luke Smith&amp;rsquo;s &lt;a href="https://gist.github.com/LukeSmithxyz/e62f26e55ea8b0ed41a65912fbebbe52">config&lt;/a>, with a few added features of my own. It uses vim binds, which is something unmissable in my shell once i started using it.&lt;/li>
-&lt;/ul>
-&lt;h3 id="wmde">WM/DE&lt;/h3>
-&lt;ul>
-&lt;li>I currently use Xfce on my desktop, and Gnome on my laptop. I enjoy the simplicity of Xfce on my desktop, and the &amp;ldquo;bloated&amp;rdquo; things Gnome comes with are useful for a machine that needs to justwork on my day to day. I&amp;rsquo;m a heavy touchpad user, and Gnome allows me to customize these to my needs.&lt;/li>
-&lt;/ul>
-&lt;h3 id="text-editor">Text editor&lt;/h3>
-&lt;ul>
-&lt;li>Neovim&lt;/li>
-&lt;/ul>
-&lt;h3 id="browser">Browser&lt;/h3>
-&lt;ul>
-&lt;li>Firefox, of course.&lt;/li>
-&lt;/ul>
-&lt;h1 id="utilities">Utilities&lt;/h1>
-&lt;h3 id="file-manager">File manager&lt;/h3>
-&lt;ul>
-&lt;li>I just use whatever my DE comes with. I don&amp;rsquo;t interact with it much, as i primarily use lf. This is built into my shell, so makes it useful to navigate my system in my terminal.&lt;/li>
-&lt;/ul>
-&lt;h3 id="rss-reader">RSS reader&lt;/h3>
-&lt;ul>
-&lt;li>Newsboat, set up with vim binds and with organized places where each topic goes.&lt;/li>
-&lt;/ul>
-&lt;h3 id="image-editor">Image editor&lt;/h3>
-&lt;ul>
-&lt;li>GIMP&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;p>That&amp;rsquo;s pretty much it. I messed around with systemd (for my vpn), and docker to get some of these services up and running. Other than that, i also used the AUR and some official packages. This is the gist of how i set it up, there were some other nuisance involved, but i didn&amp;rsquo;t mention them here.&lt;/p></description></item></channel></rss>
