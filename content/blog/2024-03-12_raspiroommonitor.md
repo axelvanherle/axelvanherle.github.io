@@ -6,12 +6,7 @@ date: 2024-03-12T20:08:30+01:00
 Let me start this off by prefacing that i made my room just a little smarter, nothing too crazy. This post is going to be about how i used a Raspberry Pi, Python, Grafana, Prometheus, Docker and some sensors that i picked up from AliExpress for a few bucks.
 
 ## So what the hell did i make?
-Well, take a look for yourself;
-
-|OpenweatherAPI & System metrics|Bedroom & Bathroom|
-|---|---|
-| ![Dashboard 1](/img/2024-03-12_rpimonitor/db1.png) | ![Dashboard 2](/img/2024-03-12_rpimonitor/db2.png) |
-| ![Dashboard 4](/img/2024-03-12_rpimonitor/db4.png) | ![Dashboard 3](/img/2024-03-12_rpimonitor/db3.png) |
+Well, take a look for yourself at the pictures at the bottom of this page.
 
 What you see is a couple of dashboard that allow me to monitor a bunch of metric in and around my room. A dashboard has been created that allows to me track the temperature and humidity in by bed and bathroom. In addition to tracking those two in my bedroom i also track the light intensity, I could've done that in the bathroom too but who cares about that if we're being honest here.
 
@@ -74,3 +69,11 @@ It's been a fun project to work on that's brought me some insight into my room a
 
 ## The GitHub
 You can find that -> https://github.com/axelvanherle/raspi-room-monitor <- there.
+
+## Pictures
+
+|OpenweatherAPI & System metrics|Bedroom & Bathroom|
+
+|---|---|
+| ![Dashboard 1](/img/2024-03-12_rpimonitor/db1.png) | ![Dashboard 2](/img/2024-03-12_rpimonitor/db2.png) |
+| ![Dashboard 4](/img/2024-03-12_rpimonitor/db4.png) | ![Dashboard 3](/img/2024-03-12_rpimonitor/db3.png) |
