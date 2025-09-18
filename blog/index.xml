@@ -1,24 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Axel's Webpage</title><link>https://axelvanherle.xyz/blog/</link><description>Recent content in My Blogposts on Axel's Webpage</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 12 Mar 2024 20:08:30 +0100</lastBuildDate><atom:link href="https://axelvanherle.xyz/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>How i made my room just a little smarter using a rpi and AliExpress</title><link>https://axelvanherle.xyz/blog/2024-03-12_raspiroommonitor/</link><pubDate>Tue, 12 Mar 2024 20:08:30 +0100</pubDate><guid>https://axelvanherle.xyz/blog/2024-03-12_raspiroommonitor/</guid><description>&lt;p&gt;Let me start this off by prefacing that i made my room just a little smarter, nothing too crazy. This post is going to be about how i used a Raspberry Pi, Python, Grafana, Prometheus, Docker and some sensors that i picked up from AliExpress for a few bucks.&lt;/p&gt;
 &lt;h2 id="so-what-the-hell-did-i-make"&gt;So what the hell did i make?&lt;/h2&gt;
-&lt;p&gt;Well, take a look for yourself;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;OpenweatherAPI &amp;amp; System metrics&lt;/th&gt;
-&lt;th&gt;Bedroom &amp;amp; Bathroom&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db1.png" alt="Dashboard 1"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db2.png" alt="Dashboard 2"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db4.png" alt="Dashboard 4"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db3.png" alt="Dashboard 3"&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Well, take a look for yourself at the pictures at the bottom of this page.&lt;/p&gt;
 &lt;p&gt;What you see is a couple of dashboard that allow me to monitor a bunch of metric in and around my room. A dashboard has been created that allows to me track the temperature and humidity in by bed and bathroom. In addition to tracking those two in my bedroom i also track the light intensity, I could&amp;rsquo;ve done that in the bathroom too but who cares about that if we&amp;rsquo;re being honest here.&lt;/p&gt;
 &lt;p&gt;In addition to that I also track the system resources of the Pi its running on, and i track a bunch of metrics from outside my room (the feels-like temperature, the temperature, the humidity, the pressure, the wind speed and a bunch of others.)&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re interested in setting this up for yourself I have made a howto which you can find on the &lt;a href="https://github.com/axelvanherle/raspi-room-monitor"&gt;GitHub page&lt;/a&gt;.&lt;/p&gt;
@@ -53,7 +35,12 @@
 &lt;h2 id="in-conclusion"&gt;In conclusion&lt;/h2&gt;
 &lt;p&gt;It&amp;rsquo;s been a fun project to work on that&amp;rsquo;s brought me some insight into my room and what&amp;rsquo;s going on around it. It&amp;rsquo;s not something that i really needed, but it sure is a nice addition for a few bucks spent. On a quick calculation i spent around 7 bucks on it. Most of that budget went to the ESP32, which cost me ~4 euros. I was lucky to have a bunch of stuff already laying about like the Raspberry Pi, a breadboard, the DHT11 sensor, jumper wires,&amp;hellip; The only things i needed to get were the DHT22, BH1750 and the ESP32. I could&amp;rsquo;ve built this project using only what i already had laying around (which i did and you can find &lt;a href="https://github.com/axelvanherle/raspi-dht11-monitor"&gt;here&lt;/a&gt;) however this solution felt a bit too simple for me, so i expanded into what became this project.&lt;/p&gt;
 &lt;h2 id="the-github"&gt;The GitHub&lt;/h2&gt;
-&lt;p&gt;You can find that -&amp;gt; &lt;a href="https://github.com/axelvanherle/raspi-room-monitor"&gt;https://github.com/axelvanherle/raspi-room-monitor&lt;/a&gt; &amp;lt;- there.&lt;/p&gt;</description></item><item><title>Why you should setup a DNS sinkhole</title><link>https://axelvanherle.xyz/blog/2023-11-27_dnssinkhole/</link><pubDate>Mon, 27 Nov 2023 13:37:38 +0100</pubDate><guid>https://axelvanherle.xyz/blog/2023-11-27_dnssinkhole/</guid><description>&lt;p&gt;I&amp;rsquo;ve know about the concept for years now, but i always imagined it to be a pain to setup. In said imagination it was going to take me days to set this up, and i recently got to it because my exams were over.&lt;/p&gt;
+&lt;p&gt;You can find that -&amp;gt; &lt;a href="https://github.com/axelvanherle/raspi-room-monitor"&gt;https://github.com/axelvanherle/raspi-room-monitor&lt;/a&gt; &amp;lt;- there.&lt;/p&gt;
+&lt;h2 id="pictures"&gt;Pictures&lt;/h2&gt;
+&lt;p&gt;|OpenweatherAPI &amp;amp; System metrics|Bedroom &amp;amp; Bathroom|&lt;/p&gt;
+&lt;p&gt;|&amp;mdash;|&amp;mdash;|
+| &lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db1.png" alt="Dashboard 1"&gt; | &lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db2.png" alt="Dashboard 2"&gt; |
+| &lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db4.png" alt="Dashboard 4"&gt; | &lt;img src="https://axelvanherle.xyz/img/2024-03-12_rpimonitor/db3.png" alt="Dashboard 3"&gt; |&lt;/p&gt;</description></item><item><title>Why you should setup a DNS sinkhole</title><link>https://axelvanherle.xyz/blog/2023-11-27_dnssinkhole/</link><pubDate>Mon, 27 Nov 2023 13:37:38 +0100</pubDate><guid>https://axelvanherle.xyz/blog/2023-11-27_dnssinkhole/</guid><description>&lt;p&gt;I&amp;rsquo;ve know about the concept for years now, but i always imagined it to be a pain to setup. In said imagination it was going to take me days to set this up, and i recently got to it because my exams were over.&lt;/p&gt;
 &lt;p&gt;Only thing is; it took me a grand total of 30 minutes to set it up. This blogpost is going to be about how and what i did to set it up, and hopefully inspire you to do the same.&lt;/p&gt;
 &lt;h1 id="the-what"&gt;The what&lt;/h1&gt;
 &lt;p&gt;Now what the fuck is a DNS sinkhole? Simply put it&amp;rsquo;s a network management tool blocks unwanted traffic. Less simply put a DNS sinkhole acts as a DNS server which intercepts DNS queries. When it receives a query for a domain that is on a blocklist (a list of domains that it should redirect to jack squat) it will prevent said device to connect to said domain.&lt;/p&gt;
