@@ -3,3 +3,6 @@ languageCode = 'en-us'
 title = "Axel's Webpage"
 
 theme = 'lugo'
+
+[params.author]
+name = "Axel Vanherle"
