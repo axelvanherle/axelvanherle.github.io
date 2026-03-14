@@ -1,6 +1,7 @@
 ---
 title: "How i made my room just a little smarter using a rpi and AliExpress"
 date: 2024-03-12T20:08:30+01:00
+draft: true
 ---
 
 Let me start this off by prefacing that i made my room just a little smarter, nothing too crazy. This post is going to be about how i used a Raspberry Pi, Python, Grafana, Prometheus, Docker and some sensors that i picked up from AliExpress for a few bucks.
