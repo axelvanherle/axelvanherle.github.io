@@ -1,6 +1,7 @@
 ---
 title: "Why you should setup a DNS sinkhole"
 date: 2023-11-27T13:37:38+01:00
+draft: true
 ---
 
 I've know about the concept for years now, but i always imagined it to be a pain to setup. In said imagination it was going to take me days to set this up, and i recently got to it because my exams were over.
